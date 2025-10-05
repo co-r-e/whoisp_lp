@@ -16,9 +16,10 @@ const geistMono = Geist_Mono({
 });
 
 const defaultContent = landingContent.en;
-const languageAlternates = Object.fromEntries(
-  alternateLocales.map((locale) => [locale, locale === "en" ? "/" : `/${locale}`])
-);
+const metadataLanguages: Record<string, string> = { en: "/" };
+for (const locale of alternateLocales) {
+  metadataLanguages[locale] = `/${locale}`;
+}
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -29,10 +30,7 @@ export const metadata: Metadata = {
   description: defaultContent.meta.description,
   alternates: {
     canonical: "/",
-    languages: {
-      en: "/",
-      ...languageAlternates,
-    },
+    languages: metadataLanguages,
   },
   icons: {
     icon: "/favicon.svg",
