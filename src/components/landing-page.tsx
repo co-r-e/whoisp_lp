@@ -64,7 +64,8 @@ export function LandingPage({ content }: { content: LandingCopy }) {
               rel="noopener noreferrer"
               className={CTA_CLASS}
             >
-              {content.headerCta.label}
+              <span className="md:hidden">Download</span>
+              <span className="hidden md:inline">{content.headerCta.label}</span>
               {content.headerCta.icon ? (
                 <span aria-hidden className="text-lg leading-none">
                   {content.headerCta.icon}

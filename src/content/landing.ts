@@ -110,7 +110,7 @@ export const landingContent: Record<"en" | "ja", LandingCopy> = {
     headerCta: {
       label: "Download from GitHub",
       href: "https://github.com/co-r-e/whoisp",
-      icon: "↗",
+      icon: "↗\uFE0E",
     },
     hero: {
       title: "Turn any name into a verified dossier in seconds.",
@@ -119,7 +119,7 @@ export const landingContent: Record<"en" | "ja", LandingCopy> = {
       primaryCta: {
         label: "Download from GitHub",
         href: "https://github.com/co-r-e/whoisp",
-        icon: "↗",
+        icon: "↗\uFE0E",
       },
       metrics: [
         { label: "Research time saved", value: "-78%" },
@@ -246,18 +246,21 @@ export const landingContent: Record<"en" | "ja", LandingCopy> = {
       cta: {
         label: "Download from GitHub",
         href: "https://github.com/co-r-e/whoisp",
-        icon: "↗",
+        icon: "↗\uFE0E",
       },
     },
     footer: {
       rightsHolder: "CORe Inc. All rights reserved.",
       links: [
-        { label: "Features", href: "#features" },
-        { label: "Workflow", href: "#workflow" },
         {
-          label: "Issues",
-          href: "https://github.com/co-r-e/whoisp/issues",
-          icon: "↗",
+          label: "Company",
+          href: "https://co-r-e.net",
+          icon: "↗\uFE0E",
+        },
+        {
+          label: "Contact",
+          href: "https://co-r-e.net/contact",
+          icon: "↗\uFE0E",
         },
       ],
     },
@@ -284,7 +287,7 @@ export const landingContent: Record<"en" | "ja", LandingCopy> = {
     headerCta: {
       label: "Gitからダウンロード",
       href: "https://github.com/co-r-e/whoisp",
-      icon: "↗",
+      icon: "↗\uFE0E",
     },
     hero: {
       title: "氏名と企業を入力するだけで、確かな人物レポートが数秒で完成。",
@@ -293,7 +296,7 @@ export const landingContent: Record<"en" | "ja", LandingCopy> = {
       primaryCta: {
         label: "Gitからダウンロード",
         href: "https://github.com/co-r-e/whoisp",
-        icon: "↗",
+        icon: "↗\uFE0E",
       },
       metrics: [
         { label: "調査時間短縮", value: "-78%" },
@@ -420,18 +423,21 @@ export const landingContent: Record<"en" | "ja", LandingCopy> = {
       cta: {
         label: "Gitからダウンロード",
         href: "https://github.com/co-r-e/whoisp",
-        icon: "↗",
+        icon: "↗\uFE0E",
       },
     },
     footer: {
       rightsHolder: "CORe Inc. All rights reserved.",
       links: [
-        { label: "機能一覧", href: "#features" },
-        { label: "利用プロセス", href: "#workflow" },
         {
-          label: "Issues",
-          href: "https://github.com/co-r-e/whoisp/issues",
-          icon: "↗",
+          label: "会社情報",
+          href: "https://co-r-e.net",
+          icon: "↗\uFE0E",
+        },
+        {
+          label: "お問い合わせ",
+          href: "https://co-r-e.net/contact",
+          icon: "↗\uFE0E",
         },
       ],
     },
