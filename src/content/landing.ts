@@ -311,7 +311,7 @@ export const landingContent: Record<"en" | "ja", LandingCopy> = {
       fallbackText: "ご利用のブラウザでは動画を再生できません。",
     },
     featuresIntro: {
-      title: "深掘りに妥協しない4つの主要機能。",
+      title: "深掘りに妥協しない主要機能。",
       description:
         "WhoisPは人物の素性調査、活動履歴、ソース添付を備えたDeepResearch機能を備えています。既存の業務フローに柔軟に組み込めて、調査の成果を素早く共有できます。",
     },
@@ -338,7 +338,7 @@ export const landingContent: Record<"en" | "ja", LandingCopy> = {
       },
     ],
     useCases: {
-      title: "6つのユースケースで広がる人物インテリジェンス。",
+      title: "ユースケースで広がる人物インテリジェンス。",
       description:
         "商談準備からアライアンス検討まで、WhoisPは日々の人物調査をスピードと確度で支援します。",
       items: [
@@ -394,6 +394,16 @@ export const landingContent: Record<"en" | "ja", LandingCopy> = {
           answer:
             "可能です。MITライセンスで公開されており、社内ネットワーク内に閉じた形で運用できます。",
         },
+        {
+          question: "料金はかかりますか？",
+          answer:
+            "WhoisPはオープンソースプロジェクトのため、無料で利用できます。ただし、GeminiなどのAI APIを使用する場合は、それぞれのサービスの料金が別途発生する場合があります。",
+        },
+        {
+          question: "どうやってスタートすれば良いですか？",
+          answer:
+            "GitHubからリポジトリをダウンロードし、ローカル環境で起動します。Gemini APIキーを取得して設定ファイルに追加し、npm run devを実行するだけで、すぐに使い始めることができます。",
+        },
       ],
     },
     workflow: {
@@ -419,7 +429,7 @@ export const landingContent: Record<"en" | "ja", LandingCopy> = {
       ],
     },
     openSource: {
-      title: "完全オープンソース。自社でホストし、データを守る。",
+      title: "人物のDeepResearchを始めましょう。",
       cta: {
         label: "Gitからダウンロード",
         href: "https://github.com/co-r-e/whoisp",

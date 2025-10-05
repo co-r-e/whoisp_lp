@@ -67,7 +67,7 @@ export function LandingPage({ content }: { content: LandingCopy }) {
               <span className="md:hidden">Download</span>
               <span className="hidden md:inline">{content.headerCta.label}</span>
               {content.headerCta.icon ? (
-                <span aria-hidden className="text-lg leading-none">
+                <span aria-hidden className="hidden md:inline text-lg leading-none">
                   {content.headerCta.icon}
                 </span>
               ) : null}
@@ -117,7 +117,7 @@ export function LandingPage({ content }: { content: LandingCopy }) {
                 ) : null}
               </div>
             </div>
-            <div className="relative mx-auto w-full max-w-[520px] sm:max-w-[580px] lg:max-w-[640px]">
+            <div className="relative mx-auto w-full max-w-[420px] sm:max-w-[580px] lg:max-w-[640px]">
               <PersonOrbit />
             </div>
           </section>
