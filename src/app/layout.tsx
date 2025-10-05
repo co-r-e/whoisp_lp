@@ -28,12 +28,28 @@ export const metadata: Metadata = {
     template: `%s | ${defaultContent.brand.name}`,
   },
   description: defaultContent.meta.description,
+  keywords: defaultContent.meta.keywords,
+  authors: [{ name: "CORe Inc.", url: "https://co-r-e.net" }],
+  creator: "CORe Inc.",
+  publisher: "CORe Inc.",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   alternates: {
     canonical: "/",
     languages: metadataLanguages,
   },
   icons: {
     icon: getAssetPath("/favicon.svg"),
+    apple: getAssetPath("/favicon.svg"),
   },
   openGraph: {
     type: "website",
@@ -42,12 +58,14 @@ export const metadata: Metadata = {
     title: defaultContent.meta.title,
     description: defaultContent.meta.description,
     locale: "en_US",
+    alternateLocale: ["ja_JP"],
     images: [
       {
         url: `${siteUrl}${getAssetPath("/logo.svg")}`,
-        width: 116,
-        height: 32,
-        alt: `${defaultContent.brand.name} logo`,
+        width: 1200,
+        height: 630,
+        alt: `${defaultContent.brand.name} - ${defaultContent.brand.tagline}`,
+        type: "image/svg+xml",
       },
     ],
   },
@@ -56,6 +74,13 @@ export const metadata: Metadata = {
     title: defaultContent.meta.title,
     description: defaultContent.meta.description,
     images: [`${siteUrl}${getAssetPath("/logo.svg")}`],
+    creator: "@core_inc",
+    site: "@core_inc",
+  },
+  verification: {
+    google: "CBcDA0b8srBcFKeEHkeDyhDckldYfdR1QRjYWExLy7I",
+    yandex: "",
+    yahoo: "",
   },
 };
 
