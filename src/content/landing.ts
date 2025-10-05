@@ -109,7 +109,7 @@ export const landingContent: Record<"en" | "ja", LandingCopy> = {
     },
     headerCta: {
       label: "Download from GitHub",
-      href: "https://github.com/whoisp/whoisp",
+      href: "https://github.com/co-r-e/whoisp",
       icon: "↗",
     },
     hero: {
@@ -118,7 +118,7 @@ export const landingContent: Record<"en" | "ja", LandingCopy> = {
         "WhoisP automates person-of-interest due diligence by compiling current and historical positions, media exposure, and portrait evidence from a single name-and-company input. Incident response, investment diligence, and compliance teams finish complete profiles in seconds.",
       primaryCta: {
         label: "Download from GitHub",
-        href: "https://github.com/whoisp/whoisp",
+        href: "https://github.com/co-r-e/whoisp",
         icon: "↗",
       },
       metrics: [
@@ -245,7 +245,7 @@ export const landingContent: Record<"en" | "ja", LandingCopy> = {
       title: "Fully open source so you can host and protect your own data.",
       cta: {
         label: "Download from GitHub",
-        href: "https://github.com/whoisp/whoisp",
+        href: "https://github.com/co-r-e/whoisp",
         icon: "↗",
       },
     },
@@ -256,7 +256,7 @@ export const landingContent: Record<"en" | "ja", LandingCopy> = {
         { label: "Workflow", href: "#workflow" },
         {
           label: "Issues",
-          href: "https://github.com/whoisp/whoisp/issues",
+          href: "https://github.com/co-r-e/whoisp/issues",
           icon: "↗",
         },
       ],
@@ -283,7 +283,7 @@ export const landingContent: Record<"en" | "ja", LandingCopy> = {
     },
     headerCta: {
       label: "Gitからダウンロード",
-      href: "https://github.com/whoisp/whoisp",
+      href: "https://github.com/co-r-e/whoisp",
       icon: "↗",
     },
     hero: {
@@ -292,7 +292,7 @@ export const landingContent: Record<"en" | "ja", LandingCopy> = {
         "WhoisPは、人物の現在と過去の経歴、メディア露出、顔写真などを自動で深掘りするDeepResearchプラットフォームです。インシデント対応、投資デューデリジェンス、コンプライアンスのプロセスを数十秒で完結させます。",
       primaryCta: {
         label: "Gitからダウンロード",
-        href: "https://github.com/whoisp/whoisp",
+        href: "https://github.com/co-r-e/whoisp",
         icon: "↗",
       },
       metrics: [
@@ -419,7 +419,7 @@ export const landingContent: Record<"en" | "ja", LandingCopy> = {
       title: "完全オープンソース。自社でホストし、データを守る。",
       cta: {
         label: "Gitからダウンロード",
-        href: "https://github.com/whoisp/whoisp",
+        href: "https://github.com/co-r-e/whoisp",
         icon: "↗",
       },
     },
@@ -430,7 +430,7 @@ export const landingContent: Record<"en" | "ja", LandingCopy> = {
         { label: "利用プロセス", href: "#workflow" },
         {
           label: "Issues",
-          href: "https://github.com/whoisp/whoisp/issues",
+          href: "https://github.com/co-r-e/whoisp/issues",
           icon: "↗",
         },
       ],
