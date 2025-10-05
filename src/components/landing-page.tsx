@@ -34,7 +34,7 @@ export function LandingPage({ content }: { content: LandingCopy }) {
         <div className="mx-auto flex w-full max-w-[1400px] items-center justify-between px-4 sm:px-6">
           <div className="flex items-center gap-4">
             <Image
-              src="/logo.svg"
+              src={getAssetPath("/logo.svg")}
               alt={`${content.brand.name} logo`}
               width={116}
               height={32}
@@ -49,7 +49,7 @@ export function LandingPage({ content }: { content: LandingCopy }) {
               aria-label={languageToggle.sr}
             >
               <Image
-                src="/globe.svg"
+                src={getAssetPath("/globe.svg")}
                 alt=""
                 width={18}
                 height={18}

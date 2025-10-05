@@ -13,13 +13,12 @@ const normalizedBasePath =
     ? ensureLeadingSlash(derivedBasePath.replace(/\/$/, ""))
     : "";
 const assetPrefixEnv = process.env.NEXT_PUBLIC_ASSET_PREFIX;
-const derivedAssetPrefix = normalizedBasePath ? `${normalizedBasePath}/` : "";
 
 const nextConfig: NextConfig = {
   output: "export",
   trailingSlash: true,
   basePath: normalizedBasePath || undefined,
-  assetPrefix: (assetPrefixEnv ?? derivedAssetPrefix) || undefined,
+  assetPrefix: (assetPrefixEnv ?? normalizedBasePath) || undefined,
   images: {
     unoptimized: true,
     remotePatterns: [

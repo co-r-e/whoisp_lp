@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import type { CSSProperties } from "react";
+import { getAssetPath } from "@/lib/site-config";
 
 type OrbitNode = {
   src: string;
@@ -210,7 +211,7 @@ export function PersonOrbit({ className }: { className?: string }) {
 
       <div className="absolute left-1/2 top-1/2 flex h-24 w-24 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-neutral-200 bg-white shadow-[0_18px_55px_rgba(15,15,15,0.12)]">
         <Image
-          src="/favicon.svg"
+          src={getAssetPath("/favicon.svg")}
           alt="WhoisP mark"
           width={40}
           height={40}

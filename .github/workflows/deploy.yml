@@ -33,21 +33,24 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Derive site URL
+      - name: Derive site URL and base path
         id: pages_meta
         run: |
           OWNER="${GITHUB_REPOSITORY%/*}"
           REPO="${GITHUB_REPOSITORY#*/}"
           if [ "$REPO" = "${OWNER}.github.io" ]; then
             echo "site=https://${OWNER}.github.io" >> "$GITHUB_OUTPUT"
+            echo "base_path=" >> "$GITHUB_OUTPUT"
           else
             echo "site=https://${OWNER}.github.io/${REPO}" >> "$GITHUB_OUTPUT"
+            echo "base_path=/${REPO}" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Build static site
         run: npm run build
         env:
           NEXT_PUBLIC_SITE_URL: ${{ steps.pages_meta.outputs.site }}
+          NEXT_PUBLIC_BASE_PATH: ${{ steps.pages_meta.outputs.base_path }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
