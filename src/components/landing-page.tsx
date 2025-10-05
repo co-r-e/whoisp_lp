@@ -202,7 +202,7 @@ export function LandingPage({ content }: { content: LandingCopy }) {
 
           <section
             id="workflow"
-            className="space-y-10 rounded-[40px] border border-neutral-200 bg-neutral-50 px-8 py-12 shadow-[0_24px_80px_rgba(15,15,15,0.08)]"
+            className="space-y-10 rounded-3xl sm:rounded-[40px] border border-neutral-200 bg-neutral-50 px-4 sm:px-8 py-12 shadow-[0_24px_80px_rgba(15,15,15,0.08)]"
           >
             <div className="flex flex-col items-center gap-4 text-center">
               <h2 className="text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl">
@@ -230,7 +230,7 @@ export function LandingPage({ content }: { content: LandingCopy }) {
 
           <section
             id="opensource"
-            className="rounded-[40px] border border-neutral-900 bg-neutral-900 px-8 py-16 text-center text-white shadow-[0_24px_90px_rgba(15,15,15,0.12)]"
+            className="rounded-3xl sm:rounded-[40px] border border-neutral-900 bg-neutral-900 px-4 sm:px-8 py-16 text-center text-white shadow-[0_24px_90px_rgba(15,15,15,0.12)]"
           >
             <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
               {content.openSource.title}
@@ -261,7 +261,7 @@ export function LandingPage({ content }: { content: LandingCopy }) {
 
           <section
             id="faq"
-            className="space-y-8 rounded-[40px] border border-neutral-200 bg-neutral-50 px-8 py-16 shadow-[0_24px_80px_rgba(15,15,15,0.08)]"
+            className="space-y-8 rounded-3xl sm:rounded-[40px] border border-neutral-200 bg-neutral-50 px-4 sm:px-8 py-16 shadow-[0_24px_80px_rgba(15,15,15,0.08)]"
           >
             <div className="space-y-4 text-center">
               <h2 className="text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl">
