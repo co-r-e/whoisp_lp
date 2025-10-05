@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import { landingContent } from "@/content/landing";
-import { alternateLocales, siteUrl } from "@/lib/site-config";
+import { alternateLocales, siteUrl, getAssetPath } from "@/lib/site-config";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     languages: metadataLanguages,
   },
   icons: {
-    icon: "/favicon.svg",
+    icon: getAssetPath("/favicon.svg"),
   },
   openGraph: {
     type: "website",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: `${siteUrl}/logo.svg`,
+        url: `${siteUrl}${getAssetPath("/logo.svg")}`,
         width: 116,
         height: 32,
         alt: `${defaultContent.brand.name} logo`,
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: defaultContent.meta.title,
     description: defaultContent.meta.description,
-    images: [`${siteUrl}/logo.svg`],
+    images: [`${siteUrl}${getAssetPath("/logo.svg")}`],
   },
 };
 

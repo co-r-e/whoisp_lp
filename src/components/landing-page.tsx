@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { PersonOrbit } from "./person-orbit";
 import type { LandingCopy } from "@/content/landing";
+import { getAssetPath } from "@/lib/site-config";
 
 const CTA_CLASS =
   "inline-flex items-center gap-2 rounded-full border border-neutral-900 bg-white px-5 py-2.5 text-sm font-semibold tracking-tight transition-colors hover:bg-neutral-100";
@@ -23,8 +24,9 @@ export function LandingPage({ content }: { content: LandingCopy }) {
           href: "/",
           sr: "Switch to English",
         };
-  const demoVideoSrc =
-    content.locale === "en" ? "/whoisp_demo_en.mp4" : "/whoisp_demo_ja.mp4";
+  const demoVideoSrc = getAssetPath(
+    content.locale === "en" ? "/whoisp_demo_en.mp4" : "/whoisp_demo_ja.mp4"
+  );
 
   return (
     <div className="text-neutral-900" lang={content.locale}>
