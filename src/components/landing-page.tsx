@@ -117,7 +117,7 @@ export function LandingPage({ content }: { content: LandingCopy }) {
                 ) : null}
               </div>
             </div>
-            <div className="relative mx-auto w-full max-w-[420px] sm:max-w-[580px] lg:max-w-[640px]">
+            <div className="relative mx-auto w-full max-w-[360px] sm:max-w-[580px] lg:max-w-[640px]">
               <PersonOrbit />
             </div>
           </section>

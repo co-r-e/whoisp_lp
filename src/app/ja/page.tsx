@@ -4,7 +4,7 @@ import { siteUrl, getAssetPath } from "@/lib/site-config";
 import type { Metadata } from "next";
 
 const content = landingContent.ja;
-const ogImageUrl = `${siteUrl}${getAssetPath("/logo.svg")}`;
+const ogImageUrl = `${siteUrl}${getAssetPath("/ogp.png")}`;
 
 export const metadata: Metadata = {
   title: content.meta.title,
@@ -42,7 +42,6 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         alt: `${content.brand.name} - ${content.brand.tagline}`,
-        type: "image/svg+xml",
       },
     ],
   },

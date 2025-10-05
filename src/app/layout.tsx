@@ -61,11 +61,10 @@ export const metadata: Metadata = {
     alternateLocale: ["ja_JP"],
     images: [
       {
-        url: `${siteUrl}${getAssetPath("/logo.svg")}`,
+        url: `${siteUrl}${getAssetPath("/ogp.png")}`,
         width: 1200,
         height: 630,
         alt: `${defaultContent.brand.name} - ${defaultContent.brand.tagline}`,
-        type: "image/svg+xml",
       },
     ],
   },
@@ -73,7 +72,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: defaultContent.meta.title,
     description: defaultContent.meta.description,
-    images: [`${siteUrl}${getAssetPath("/logo.svg")}`],
+    images: [`${siteUrl}${getAssetPath("/ogp.png")}`],
     creator: "@core_inc",
     site: "@core_inc",
   },
